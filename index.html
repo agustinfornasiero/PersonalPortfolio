@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+ <html lang = "en">
+    <head>
+        <!--Meta Section-->
+        <meta charset="UTF-8">
+        <meta name="description" content="Personal Portfolio Website">
+        <meta name="keywords" content="HTML, CSS">
+        <meta name="author" content="Agustín Fornasiero">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Import Icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--Import CSS Styles-->
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!--FreeCodeCamp script has a bug that not recognize the media queries on CSS File, so I have to put it here..-->
+        <style>
+            /* Responsive layout - makes a two column-layout instead of four columns */
+            @media screen and (max-width: 900px) {
+            .column {
+                width: 50%;
+            }
+            }
+
+            /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+            }
+        </style>
+
+        <title>Personal Portfolio Webpage</title>
+    </head>
+
+    <!--Navbar-->
+    <nav id="navbar">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!--Body of the Page-->
+    <body>
+        <!--About-->
+        <section id="welcome-section">
+        <header id="about">
+            <h1>Hello!</h1>
+            <p>My name is Agustín Fornasiero</p>
+            <p>and I am a Web Developer and Information System Engineer Student</p>
+        </header>
+        </section>
+
+        <!--Projects Section-->
+        
+        <!-- Portfolio Gallery Grid -->
+        <section id="projects">
+        <h2>My Projects</h2>
+        <p>In this Section, you can see my projects and web designs.</p>
+        <div class="row">
+            <div class="column">
+                <div class="project-tile">
+                    <a href="https://agustinfornasiero.github.io/Tribute-Page/" target="_blank"><img src="images/birdy-tribute-page.jpg" alt="Birdy - Tribute Page"></a>
+                        <h3>Birdy - Tribute Page</h3>
+                        <p>Well, this is the first project I've made to FreeCodeCamp Curriculum. I love Birdy's songs, so I decided to make a wesite of her. Click on the image to view the full project</p>
+                </div>
+            </div>
+
+        <div class="column">
+            <div class="project-tile">
+                 <a href="https://agustinfornasiero.github.io/Survey-Form/" target="_blank"><img src="images/survey-form.jpeg" alt="Survey Form"></a>
+                <h3>Survey Form</h3>
+                <p>This is the second project I've made to FreeCodeCamp Curriculum. Click on the image to view the full project</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="project-tile">
+                <a href="https://agustinfornasiero.github.io/LandingPage/" target="_blank"><img src="images/landing-page.jpg" alt="Landing Page"></a>
+                <h3>Landing Page</h3>
+                <p>On this third project, from FreeCodeCamp Curriculum, I've to make a simple Landing Page. Click on the image to view the full project</p>
+            </div>
+        </div>
+
+
+        <div class="column">
+            <div class="project-tile">
+                <a href="https://agustinfornasiero.github.io/technical-documentation-page/" target="_blank"><img src="images/technical-documentation-page.jpg" alt="Technical Documentation Page"></a>
+                <h3>CSS Documentation Page</h3>
+                <p>On the fourth FreeCodeCamp Curriculum project, I had to make a Technical Documentation Page. I decided to make about CSS. Click on the image to view the full project</p>
+            </div>
+        </div>
+    </div>
+    </section> 
+
+        <!--Contact Section-->
+        <section id="contact" class="social-menu">
+            <h2>Contact Me</h2>
+            <p>You can fill this following form, and I'll contact you soon. Thank you!</p>
+            <div class="container">
+                <form action="action_page.php">
+              
+                  <label for="fname">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your name..">
+              
+                  <label for="femail">Email</label>
+                  <input type="email" id="email" name="emial" placeholder="Your email..">
+              
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="argentina">Argentina</option>
+                    <option value="usa">USA</option>
+                    <option value="europe">Europe</option>
+                    <option value="other-country">Other Country</option>
+                  </select>
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Can you tell me why you contact me?, I'll contact you soon.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+              </div> 
+            <p>You can find me on...</p>
+            <ul>
+                <li><a href = "https://es-la.facebook.com/agustin.fornasiero" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a id= "profile-link" href = "https://ar.linkedin.com/in/agust%C3%ADn-fornasiero" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href = "https://github.com/agustinfornasiero" target="_blank"><i class="fa fa-github"></i></a></li>
+              </ul>
+        </section>
+
+        <footer>
+            <p>Copyright © 2020 by Agustin Fornasiero - Software Developer</p>
+        </footer>
+
+        <!--QUEDE EN EL MINUTO 30 DEL VIDEO-->
+
+
+
+        <!--Import FreeCodeCamp Script-->
+    <script src = "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+
+
+ </html>
